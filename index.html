@@ -1,103 +1,147 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<title>Storms Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Storms Digital</title>
 
 <style>
-
-/* BODY */
 body {
-    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000, #001f3f);
     color: white;
     text-align: center;
-    font-family: Arial;
 }
 
-/* TITLE */
-h1 {
-    color: orange;
-}
-
-/* NORMAL LINKS */
-a {
-    color: purple;
-    font-size: 18px;
-}
-
-/* BUTTON */
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: orange;
-    color: black;
-    text-decoration: none;
-    border-radius: 8px;
-    margin-top: 15px;
- 
-font-weight: bold;
-nav {
-    background-color: #111;
+header {
+    background: black;
     padding: 15px;
 }
 
+header h1 {
+    color: gold;
+    margin: 0;
+}
+
 nav a {
-    color: orange;
-    margin: 10px;
+    margin: 0 10px;
+    color: white;
     text-decoration: none;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    background: gold;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
     font-weight: bold;
 }
 
-nav a:hover {
-    color: white;
-    }
+.card {
+    background: #111;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255,215,0,0.2);
 }
 
-/* BUTTON HOVER */
-.btn:hover {
-    background-color: white;
-    color: black;
-}
-
-/* IMAGE */
-img {
-    border-radius: 10px;
+footer {
+    background: black;
+    padding: 15px;
     margin-top: 20px;
 }
-
-/* SECTION HEADINGS */
-h2 {
-    margin-top: 30px;
-    color: orange;
-}
-
 </style>
 
 </head>
-
 <body>
-<h1>🔥 Welcome to Storms Website 🔥</h1>
 
-<p>Hi, I'm Storms 👋</p>
+<header>
+    <h1>Storms Digital</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-<p>I’m learning coding 💻</p>
+<section>
+    <h2>🔥 Hi, I'm Storms 👋</h2>
+    <p>I help businesses get more customers with clean websites</p>
 
+    <button onclick="alert('Welcome to Storms Digital 🚀')">Click Me</button>
 
+    <br>
 
-<p>More coming soon...</p>
+    <a href="https://wa.me/2348085444104">
+        <button>💬 Chat Me on WhatsApp</button>
+    </a>
+</section>
 
-<a href="https://github.com" class="btn">Visit my GitHub</a>
+<section id="services">
+    <h2>My Services</h2>
 
-<img src="https://picsum.photos/200">
+    <div class="card">
+        <h3>Website Design</h3>
+        <p>I create clean and responsive websites.</p>
+    </div>
 
-<h2>About Me</h2>
-<p>I am Storms, a beginner web developer learning how to build websites and apps.</p>
+    <div class="card">
+        <h3>Contact Forms</h3>
+        <p>I build forms that send messages directly to your email.</p>
+    </div>
+</section>
 
-<h2>My Skills</h2>
-<p>HTML ✅</p>
-<p>CSS 🔥</p>
-<p>More coming soon...</p>
+<section>
+    <h2>Why Choose Me</h2>
+
+    <div class="card">
+        <h3>Fast Delivery</h3>
+        <p>I deliver your website quickly and efficiently.</p>
+    </div>
+
+    <div class="card">
+        <h3>Mobile Friendly</h3>
+        <p>Your site will look perfect on all phones.</p>
+    </div>
+
+    <div class="card">
+        <h3>Direct Contact</h3>
+        <p>Your customers can reach you anytime.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="card">
+        <p>📞 Phone: 08085444104</p>
+        <p>📧 Email: stormsoffice22@gmail.com</p>
+    </div>
+</section>
+
+<section>
+    <h2>Testimonials</h2>
+
+    <div class="card">
+        <p>"Storms built my website and my business improved!"</p>
+    </div>
+
+    <div class="card">
+        <p>"Very fast and professional work."</p>
+    </div>
+</section>
+
+<footer>
+    <p>© Storms 2026. All Rights Reserved.</p>
+</footer>
 
 </body>
-
-</html)
+</html>
